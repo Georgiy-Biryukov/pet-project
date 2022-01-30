@@ -1,0 +1,19 @@
+.form-radio-group {
+  display: flex;
+  margin-right: 22px;
+  align-items: center;
+}
+
+.form-radio-group input {
+  margin-right: 10px;
+}
+
+.error-checkbox {
+  width: 350px;
+  position: absolute;
+  font-size: 12px;
+  line-height: 12px;
+  color: #ff0000;
+  left: 10px;
+  top: 35px;
+}
