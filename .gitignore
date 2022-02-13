@@ -2,6 +2,9 @@
 
 # dependencies
 /node_modules
+/.prettierrc.json
+/desktop.ini
+/.vscode
 /.pnp
 .pnp.js
 

@@ -1,13 +1,14 @@
 import React from "react";
 import { ErrorMessage, useField } from "formik";
 
+import {FormGroup, StyleSelect} from './styled.js';
+
 const InputSelect = ({ ...props }) => {
   const [field, meta] = useField(props);
 
   return (
-    <>
-      <div className="form-group">
-        <select
+      <FormGroup>
+        <StyleSelect
           {...field}
           {...props}
           className={
@@ -23,10 +24,9 @@ const InputSelect = ({ ...props }) => {
           <option value="France">France</option>
           <option value="Russia">Russia</option>
           <option value="Germany">Germany</option>
-        </select>
+        </StyleSelect>
         <ErrorMessage component="div" name={field.name} className="error" />
-      </div>
-    </>
+      </FormGroup>
   );
 };
 export default InputSelect;
